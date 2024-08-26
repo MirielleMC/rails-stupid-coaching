@@ -1,0 +1,13 @@
+<div class="my-3 d-flex align-items-center w-50">
+  <div class="border-5 border-start px-4 py-2">
+  <%= params[:question]%>
+  <em><p class = "m-0">-You</p></em>
+  </div>
+</div>
+<div class="my-3 d-flex align-items-center">
+  <div class="bg-opacity-10 bg-warning border-5 border-start px-4 py-2 w-50">
+  <strong><%= @answer%></strong>
+  <em><p class = "m-0">-Your coach</p></em>
+  </div>
+</div>
+  <%= link_to 'Ask a new question', ask_path %>
